@@ -5,7 +5,7 @@ import photoMauludu from '../img/mauludu_basirun.jpg';
 
 const About = () => {
   return (
-    <section className='h-full bg-hero bg-no-repeat bg-cover bg-center py-28'>
+    <section className='h-full md:h-screen bg-hero bg-no-repeat bg-cover bg-center py-28'>
       <div className='container mx-auto text-center'>
         {/* title */}
         <h1 className='text-[30px] md:text-[50px] leading-[1.1] font-bold mb-4'>
@@ -24,10 +24,10 @@ const About = () => {
             <h5 className='text-base md:text-xl font-semibold'>Hizkia Jefren Reppi</h5>
             <h6 className='text-sm md:text-lg font-medium'>21208008</h6>
             <div className='flex items-center justify-center gap-2 text-sm md:text-lg'>
-              <a href='https://www.instagram.com/hizkiajefren_/' target='_blank'>
+              <a href='https://www.instagram.com/hizkiajefren_/'>
                 <BsInstagram />
               </a>
-              <a href='https://www.hizkiareppi.netlify.app' target='_blank'>
+              <a href='https://www.hizkiareppi.netlify.app'>
                 <BsGlobe />
               </a>
             </div>
@@ -39,10 +39,10 @@ const About = () => {
             <h5 className='text-base md:text-xl font-semibold'>Arauna Rangan Pabara</h5>
             <h6 className='text-sm md:text-lg font-medium'>21208001</h6>
             <div className='flex items-center justify-center gap-2 text-sm md:text-lg'>
-              <a href='https://www.instagram.com/arrrrrrrrraaaaaaaaa/' target='_blank'>
+              <a href='https://www.instagram.com/arrrrrrrrraaaaaaaaa/'>
                 <BsInstagram />
               </a>
-              <a href='https://www.araunapabara.netlify.app' target='_blank'>
+              <a href='https://www.araunapabara.netlify.app'>
                 <BsGlobe />
               </a>
             </div>
@@ -54,10 +54,10 @@ const About = () => {
             <h5 className='text-base md:text-xl font-semibold'>Mauludu Basirun</h5>
             <h6 className='text-sm md:text-lg font-medium'>21208020</h6>
             <div className='flex items-center justify-center gap-2 text-sm md:text-lg'>
-              <a href='https://www.instagram.com/mauludu_basirun/' target='_blank'>
+              <a href='https://www.instagram.com/mauludu_basirun/'>
                 <BsInstagram />
               </a>
-              <a href='https://www.mauludubasirun.netlify.app' target='_blank'>
+              <a href='https://www.mauludubasirun.netlify.app'>
                 <BsGlobe />
               </a>
             </div>

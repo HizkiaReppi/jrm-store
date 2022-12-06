@@ -4,7 +4,7 @@ import { InputTextBox, TextArea } from '../components/Textbox'
 
 const Contact = () => {
   return (
-    <section className='h-full py-28'>
+    <section className='h-full md:h-screen py-28'>
       <div className='container mx-auto text-center'>
         {/* title */}
         <h1 className='text-[30px] md:text-[50px] leading-[1.1] font-bold mb-4'>
