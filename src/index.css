@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-primary;
+  }
+  ::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+  }
+}
+
+@layer components {
+  .inputTextBox {
+    @apply w-80 md:w-[450px] h-16 rounded-lg bg-transparent border-2 border-black focus:outline-none pl-4 duration-500 ease-in-out placeholder:opacity-0 placeholder:text-black placeholder:text-sm
+  }
+
+  .textArea {
+    @apply w-80 md:w-[450px] min-h-[200px] rounded-lg bg-transparent border-2 border-black focus:outline-none pl-4 duration-500 py-5 ease-in-out placeholder:opacity-0 placeholder:text-black placeholder:text-sm
+  }
+
+  .labelTextBox {
+    @apply absolute top-5 left-5 z-10 bg-transparent transition-all duration-300 ease-in-out
+  }
+
+  .labelTextArea{
+    @apply absolute top-5 left-5 z-10 bg-transparent transition-all duration-300 ease-in-out
+  }
+
+  .inputTextBox:focus {
+    @apply placeholder:opacity-100
+  }
+
+  .inputTextBox:focus + .labelTextBox,
+  .inputTextBox:valid + .labelTextBox,
+  .textArea:focus + .labelTextArea,
+  .textArea:valid + .labelTextArea {
+    @apply -top-3 bg-white
+  }
+
+  #sendButton {
+    @apply relative overflow-hidden flex items-center gap-3 h-14 w-52 py-0 px-5 rounded-md text-white font-semibold bg-[#D62959] cursor-pointer
+  }
+
+  .iconButton {
+    @apply text-xl
+  }
+
+  .textButton {
+    @apply block whitespace-nowrap text-lg font-semibold
+  }
+
+  #sendButton.sending .iconButton {
+    animation: iconAnimation 5s both;
+  }
+
+  #sendButton.sending .textButton {
+    animation: textAnimation 5s both;
+  }
+
+  @keyframes iconAnimation {
+    0%, 5%{ translate: 0 0;}
+    20%, 30%{ translate: -250px 0;}
+    40%{ translate: 200px 0; scale: 2;}
+    40.1%{ translate: 200px -60px; scale: 1;}
+    40.2%{ translate: 34px -60px;}
+    45%, 95%, 100%{ translate: 34px 0;}
+  }
+
+  @keyframes textAnimation {
+    0%, 30% {translate: 0 0;}
+    33.9% {translate: 0 100px;}
+    40% {translate: 300px 100px;}
+    40.1% {translate: 300px -60px;}
+    40.2% {translate: 33px -60px;}
+    45% {translate: 33px 0;}
+    95%, 100% {translate: 33px 0;}
+  }
+}
